@@ -23,8 +23,8 @@ def edit_contact_form():
             return
 
         # Pre-fill form
-        new_name = st.text_input("Name", value=contact_e["name"])
-        new_phone = st.text_input("Phone Number", value=contact_e["phone"])
+        new_name = st.text_input("Name", value=contact_e["Name"])
+        new_phone = st.text_input("Phone Number", value=contact_e["Phone"])
 
         #display the success message
         if st.session_state.get("update_success"):
@@ -34,7 +34,7 @@ def edit_contact_form():
         #check new name and digits
         #checks the length of the new name
         def is_valid_name(new_name):
-            return len(name.strip()) >= 3 and len(name.strip()) <=25
+            return len(new_name.strip()) >= 3 and len(new_name.strip()) <=25
         #checks whether the input is digit and length of the new phone number is exactly 10 digits
         def is_valid_phone(new_phone):
             return new_phone.isdigit() and len(new_phone) == 10
@@ -50,7 +50,7 @@ def edit_contact_form():
                  #To update in database
                     collection.update_one(
                         {"_id": ObjectId(contact_id)},
-                        {"$set": {"name": new_name, "phone": new_phone}}
+                        {"$set": {"Name": new_name, "Phone": new_phone}}
                     )
                     # storing in temporary flag that button is clicked 
                     st.session_state["update_success"] = True #setting the flag

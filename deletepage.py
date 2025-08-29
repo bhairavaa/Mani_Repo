@@ -21,7 +21,7 @@ def delete_form():
     # Display each contact with a checkbox
     for contact in contact_list:
         contact_id = str(contact["_id"])
-        contact_label = f"{contact['name']} — {contact['phone']}"
+        contact_label = f"{contact['Name']} — {contact['Phone']}"
         #add to selected_contacts list
         if st.checkbox(contact_label, key=contact_id):
             selected_contacts.append(contact_id)
