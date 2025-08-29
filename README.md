@@ -1,6 +1,6 @@
 # Mani_Repo
-# Go to app1.py (Thats the Home screen page)then 
-In new Terminal type ->  streamlit run app1.py
+# Go to app.py (Thats the Home screen page)then 
+In new Terminal type ->  streamlit run app.py
 
 
 ## Clone This Project
