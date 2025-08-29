@@ -1,10 +1,10 @@
-# Mani_Repo
-# Go to app.py (Thats the Home screen page)then 
+# Contact-Manager
+# Go to app.py (This is the Home screen page) then 
 In new Terminal type ->  streamlit run app.py
 
 
 ## Clone This Project
-```bash
-git clone https://github.com/your-username/Mani_Repo.git
-cd Mani_Repo
+```bash #Run the below code to clone the remote repository
+git clone https://github.com/your-username/contact-manager.git
+
 streamlit run app.py
